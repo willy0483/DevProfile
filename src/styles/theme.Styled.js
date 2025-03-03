@@ -1,12 +1,14 @@
 export const theme = {
   color: {
-    white: "#FFFFFF",
-    black: "#000000",
-    background: "#242424",
-    red: "#C52525",
-    greyWhite: "#F6F3F3",
-    blue: "#0056b3",
+    white: "#F5F5F5",
+    black: "#0A0A0A",
+    midnight: "#242424",
+    accent: "#BB86FC",
+    grey: "#181818",
+    greytext: "#666",
   },
+  borderRadius: "16px",
+  padding: "1rem",
   fonts: ["Oswald", "Open Sans"],
   grid: {
     breakpoints: {

@@ -1,9 +1,19 @@
 import "./App.scss";
 
+import { Main } from "./components/main/main";
+import { Grid } from "./components/grid/grid";
+
+// all my routes
+import { AppRoutes } from "./routes/appRoutes";
+
 function App() {
   return (
     <>
-      <h1>homepage</h1>
+      <Grid>
+        <Main>
+          <AppRoutes />
+        </Main>
+      </Grid>
     </>
   );
 }
