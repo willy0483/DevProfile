@@ -6,10 +6,7 @@ export const ProfileStyled = styled.section`
     "profileImage aboutMe aboutMe aboutMe"
     "employment employment education education"
     "competencies workTogether workTogether moreAboutMe";
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto auto;
-  grid-gap: 16px;
-  height: calc(100vh - 50px);
+  grid-gap: 10px;
   max-width: 1000px;
   margin: auto;
   padding: ${(props) => props.theme.padding};
@@ -32,11 +29,48 @@ export const ProfileImage = styled.div`
 `;
 
 export const WorkTogether = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  background-image: linear-gradient(to top, #0d0d0d, #0f0f0f, #111111, #121212, #141414);
+  border-radius: ${(props) => props.theme.borderRadius};
+  padding: ${(props) => props.theme.padding};
   grid-area: workTogether;
   height: 200px;
+
+  div {
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+`;
+
+export const WorkTogetherImage = styled.div`
+  margin: 0 0.5rem;
+a{
+  display: flex;
+  justify-content: center;
+}
+  img {
+    width: 50px;
+  }
 `;
 
 export const MoreAboutMe = styled.div`
   grid-area: moreAboutMe;
   height: 200px;
+  background-image: linear-gradient(to top, #0d0d0d, #0f0f0f, #111111, #121212, #141414);
+  border-radius: ${(props) => props.theme.borderRadius};
+  padding: ${(props) => props.theme.padding};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    text-align: center;
+  }
 `;
